@@ -19,6 +19,7 @@ namespace ProtractorDemo
         [TestInitialize]
         public void Start()
         {
+            //Change the geckodriver path to a location on your machine below
             driver = new FirefoxDriver(@"C:\Users\Shiva\Downloads");
             driver.Manage().Window.Maximize();
             WaitTime = new WebDriverWait(driver, TimeSpan.FromSeconds(30));
